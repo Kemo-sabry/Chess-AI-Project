@@ -1,5 +1,6 @@
 package com.example.chess;
 
+
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -135,3 +136,4 @@ public class GameSettings {
         return out[0];
     }
 }
+

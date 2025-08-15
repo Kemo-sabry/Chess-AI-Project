@@ -1,5 +1,6 @@
 package com.example.chess;
 
+
 public class Move {
     public final int fromRow, fromCol, toRow, toCol;
     public Piece.PieceType promotion; // null if none
@@ -19,3 +20,4 @@ public class Move {
         return "[" + fromRow + "," + fromCol + "]->[" + toRow + "," + toCol + "]" + (promotion!=null ? "="+promotion : "");
     }
 }
+
