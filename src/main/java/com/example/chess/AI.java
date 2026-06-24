@@ -64,8 +64,7 @@ public class AI {
         List<Move> moves = board.generateAllLegalMovesForSide(currentSideWhite);
         if (moves.isEmpty()) {
             if (board.isKingInCheck(currentSideWhite)) {
-                // Mate score depends on who gets mated
-                return (currentSideWhite == myColorWhite) ? -MATE_SCORE + depth : MATE_SCORE - depth;
+                return currentSideWhite ? -MATE_SCORE + depth : MATE_SCORE - depth;
             } else {
                 return 0; // stalemate
             }
